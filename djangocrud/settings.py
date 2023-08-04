@@ -34,6 +34,7 @@ CORS_ORIGIN_WHITELIST = [
 CORS_ALLOWED_ORIGINS = [
     "https://www.example.com",
     "https://example.com",
+    "http://localhost:4200"
 ]
 
 # Si deseas permitir que las solicitudes CORS incluyan cookies, establece esta opción en True

@@ -12,20 +12,14 @@ class ProductosViewSet(viewsets.ModelViewSet):
     API endpoint that allows users to be viewed or edited.
     """
     queryset = Productos.objects.all()
-    serializer_class = ProductosSerializer()
+    serializer_class = ProductosSerializer
     permission_classes = [AllowAny]
 
-# class ProductosList(APIView):
-    
-
-#     def get(self, request, format=None):
-#         queryset = Productos.objects.all()
-#         serializer_class = ProductosSerializer
 
 class CategoriaViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
     queryset = Categoria.objects.all()
-    serializer_class = CategoriaSerializer()
+    serializer_class = CategoriaSerializer
     permission_classes = [AllowAny]
