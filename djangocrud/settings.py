@@ -27,9 +27,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CORS_ORIGIN_WHITELIST = (
+CORS_ORIGIN_WHITELIST = [
     'http://localhost:4200',
-)
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://www.example.com",
+    "https://example.com",
+]
+
+# Si deseas permitir que las solicitudes CORS incluyan cookies, establece esta opción en True
+CORS_ALLOW_CREDENTIALS = True
+
 
 
 # Application definition
